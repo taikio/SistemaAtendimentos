@@ -106,7 +106,8 @@ function erro(campo,codErro) {
 alert(campo);
         var  insere = document.getElementById(campo);
         var conteudo = insere.value;
-        if(codErro != 0 && codErro != 100){
+        
+        if(codErro != 0){
             if(codErro == 1){
                 alert("O campo "+ campo+" é de preenchimento obrigatorio");
             }else
@@ -128,9 +129,11 @@ alert(campo);
                 if(codErro == 7){
                     alert("Endereço invalido");
                 }
-            insere.className += insere.className ? ' erro' : 'erro';
-        }else{
-            insere.className -= insere.className ? ' erro' : 'erro';
+            insere.className -= insere.className ? ' form-control' : ' form-control';
+            insere.className += insere.className ? ' form-control-error' : 'form-control-error';
+        }else{        	
+        	insere.className -= insere.className ? ' form-control-error' : 'form-control-error';
+            insere.className += insere.className ? ' form-control' : ' form-control'; 
         
         }
 
