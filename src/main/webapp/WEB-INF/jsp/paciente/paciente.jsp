@@ -35,7 +35,7 @@
  <input type="text" id="nome" placeholder="Nome Completo" class="form-control" size="50" onblur="validacao('nome')">
  <input type="text" id="cpf" placeholder="CPF" class="form-control" size="50" onblur="validacao('cpf')">
  <input type="text" id="endereco" placeholder="Endereço" class="form-control" size="50" onblur="validacao('endereco')">
- <input type="text" id="telefone" placeholder="Telefone" class="form-control" size="50" onblur="validacao('telefone')">
+ <input type="tel" id="telefone" placeholder="Telefone" class="form-control" size="50" onblur="validacao('telefone')">
  
  <br>
  <input type="submit" id="enviar" class="btn btn-warning" value="Salvar">&nbsp;&nbsp;&nbsp;
